@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA e Arte: Uma Reflexão Filosófica</title>
+    <meta name="description" content="Explorando o impacto da Inteligência Artificial na arte através de uma perspectiva filosófica">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'deep': '#0a0a0f',
+                        'accent': '#6366f1',
+                        'accent-light': '#818cf8',
+                        'muted': '#71717a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+        }
+        .slide {
+            scroll-snap-align: start;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-deep text-white font-body">
+    
+    <!-- Navegação -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-display text-xl font-bold gradient-text">IA & Arte</span>
+            <div class="hidden md:flex gap-8 text-sm text-muted">
+                <a href="#inicio" class="hover:text-white transition-colors">Início</a>
+                <a href="#questao" class="hover:text-white transition-colors">A Questão</a>
+                <a href="#autoria" class="hover:text-white transition-colors">Autoria</a>
+                <a href="#estetica" class="hover:text-white transition-colors">Estética</a>
+                <a href="#futuro" class="hover:text-white transition-colors">Futuro</a>
+                <a href="#fontes" class="hover:text-white transition-colors">Fontes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slide 1: Introdução -->
+    <section id="inicio" class="slide min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-accent/20 via-transparent to-purple-900/20"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+            <p class="text-accent-light uppercase tracking-[0.3em] text-sm mb-6">Uma Reflexão Filosófica</p>
+            <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
+                <span class="gradient-text">Inteligência Artificial</span>
+                <br>
+                <span class="text-white/90">e a Arte</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-muted max-w-2xl mx-auto leading-relaxed">
+                Quando máquinas criam, o que permanece humano na arte? Uma jornada pelos territórios inexplorados da criatividade algorítmica.
+            </p>
+            <div class="mt-12">
+                <a href="#questao" class="inline-flex items-center gap-2 text-accent-light hover:text-white transition-colors">
+                    <span>Explorar</span>
+                    <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 2: A Questão Fundamental -->
+    <section id="questao" class="slide min-h-screen flex items-center py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-accent text-sm uppercase tracking-widest">Slide 01</span>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-8">
+                        A Questão <span class="gradient-text">Fundamental</span>
+                    </h2>
+                    <div class="space-y-6 text-lg text-zinc-300 leading-relaxed">
+                        <p>
+                            A emergência da IA generativa nos coloca diante de uma pergunta que ecoa os debates filosóficos mais antigos: 
+                            <strong class="text-white">O que constitui verdadeiramente a arte?</strong>
+                        </p>
+                        <p>
+                            Para Walter Benjamin, em "A Obra de Arte na Era de Sua Reprodutibilidade Técnica" (1936), 
+                            a reprodução mecânica já havia abalado a "aura" da obra original. A IA representa um 
+                            <em class="text-accent-light">novo estágio dessa transformação</em>.
+                        </p>
+                        <p>
+                            Se a arte sempre foi vista como expressão da experiência humana, da dor, alegria e contemplação, 
+                            pode um algoritmo — desprovido de consciência — produzir algo genuinamente artístico?
+                        </p>
+                    </div>
+                </div>
+                <div class="glass rounded-3xl p-8 md:p-12">
+                    <blockquote class="font-display text-2xl md:text-3xl italic text-zinc-200 leading-relaxed">
+                        "A arte não reproduz o visível, mas torna visível."
+                    </blockquote>
+                    <cite class="block mt-6 text-accent-light">— Paul Klee</cite>
+                    <p class="mt-4 text-sm text-muted">
+                        A questão que emerge: pode uma IA "tornar visível" algo que nunca experienciou?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 3: O Problema da Autoria -->
+    <section id="autoria" class="slide min-h-screen flex items-center py-24 bg-gradient-to-b from-transparent via-accent/5 to-transparent">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-accent text-sm uppercase tracking-widest">Slide 02</span>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mt-4">
+                    O Problema da <span class="gradient-text">Autoria</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass rounded-2xl p-8 hover:bg-white/5 transition-colors">
+                    <div class="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">🎨</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-4">A "Morte do Autor"</h3>
+                    <p class="text-zinc-400 leading-relaxed">
+                        Roland Barthes argumentou que o significado da obra pertence ao leitor, não ao autor. 
+                        Se o autor já estava "morto", a IA apenas radicaliza essa dissolução da autoria tradicional.
+                    </p>
+                </div>
+                
+                <div class="glass rounded-2xl p-8 hover:bg-white/5 transition-colors">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">🤖</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-4">O Artista como Curador</h3>
+                    <p class="text-zinc-400 leading-relaxed">
+                        A IA desloca o papel do artista: de criador absoluto para curador de possibilidades. 
+                        O humano seleciona, refina e contextualiza — uma forma diferente, mas não menor, de criação.
+                    </p>
+                </div>
+                
+                <div class="glass rounded-2xl p-8 hover:bg-white/5 transition-colors">
+                    <div class="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">⚖️</span>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-4">Questões Éticas</h3>
+                    <p class="text-zinc-400 leading-relaxed">
+                        Quando uma IA treina com milhares de obras, quem detém os direitos? 
+                        A discussão sobre apropriação e originalidade ganha contornos inéditos na era algorítmica.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 glass rounded-2xl p-8 md:p-12">
+                <p class="text-xl text-zinc-300 leading-relaxed text-center max-w-3xl mx-auto">
+                    Michel Foucault nos lembra que a "função-autor" é uma construção histórica. 
+                    <span class="text-white font-medium">A IA nos força a repensar essa construção</span> — 
+                    não para eliminá-la, mas para expandi-la além dos limites do humano.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 4: Estética e Experiência -->
+    <section id="estetica" class="slide min-h-screen flex items-center py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="glass rounded-3xl p-8 space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-lg font-bold mb-2">Kant e o Juízo Estético</h4>
+                                <p class="text-zinc-400">
+                                    Para Kant, a beleza envolve um "prazer desinteressado" — uma experiência subjetiva 
+                                    que pretende universalidade. A arte da IA pode provocar esse mesmo prazer?
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-lg font-bold mb-2">Heidegger e a Verdade</h4>
+                                <p class="text-zinc-400">
+                                    A arte, para Heidegger, é um "pôr-em-obra da verdade". Ela revela aspectos do ser 
+                                    que permanecem ocultos. Pode um algoritmo participar dessa revelação?
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 bg-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-display text-lg font-bold mb-2">A Experiência Estética</h4>
+                                <p class="text-zinc-400">
+                                    Independentemente da origem, se uma obra nos move, nos transforma, nos faz pensar — 
+                                    ela não cumpre a função essencial da arte?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2">
+                    <span class="text-accent text-sm uppercase tracking-widest">Slide 03</span>
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-8">
+                        Estética e <span class="gradient-text">Experiência</span>
+                    </h2>
+                    <p class="text-xl text-zinc-300 leading-relaxed mb-6">
+                        A filosofia estética sempre se perguntou: o que torna algo belo? O que distingue 
+                        arte de mera técnica? A IA reacende esses debates com urgência renovada.
+                    </p>
+                    <p class="text-lg text-zinc-400 leading-relaxed">
+                        John Dewey argumentava que a arte é definida pela <em class="text-accent-light">experiência</em> 
+                        que proporciona, não pela intenção do criador. Sob essa ótica, a origem algorítmica 
+                        torna-se secundária frente ao impacto na audiência.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 5: O Futuro da Criação -->
+    <section id="futuro" class="slide min-h-screen flex items-center py-24 bg-gradient-to-b from-transparent via-purple-900/10 to-transparent">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-accent text-sm uppercase tracking-widest">Slide 04</span>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mt-4">
+                    O Futuro da <span class="gradient-text">Criação</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="glass rounded-2xl p-8">
+                        <h3 class="font-display text-2xl font-bold mb-4 flex items-center gap-3">
+                            <span class="text-accent">→</span> Colaboração Humano-Máquina
+                        </h3>
+                        <p class="text-zinc-300 leading-relaxed">
+                            O futuro mais provável não é a substituição, mas a <strong class="text-white">simbiose</strong>. 
+                            Artistas já utilizam IA como ferramenta criativa, expandindo possibilidades antes inimagináveis. 
+                            A tecnologia amplifica a visão humana.
+                        </p>
+                    </div>
+                    
+                    <div class="glass rounded-2xl p-8">
+                        <h3 class="font-display text-2xl font-bold mb-4 flex items-center gap-3">
+                            <span class="text-purple-400">→</span> Democratização da Criação
+                        </h3>
+                        <p class="text-zinc-300 leading-relaxed">
+                            A IA permite que pessoas sem treinamento técnico expressem visões artísticas. 
+                            Isso representa uma <strong class="text-white">democratização</strong> da criação — 
+                            ou uma diluição do valor da maestria técnica?
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="glass rounded-2xl p-8">
+                        <h3 class="font-display text-2xl font-bold mb-4 flex items-center gap-3">
+                            <span class="text-pink-400">→</span> Novos Gêneros Artísticos
+                        </h3>
+                        <p class="text-zinc-300 leading-relaxed">
+                            Assim como a fotografia e o cinema criaram novas formas de arte, a IA pode originar 
+                            gêneros inéditos. Arte generativa, obras que evoluem, criações que respondem ao espectador 
+                            em tempo real.
+                        </p>
+                    </div>
+                    
+                    <div class="glass rounded-2xl p-8">
+                        <h3 class="font-display text-2xl font-bold mb-4 flex items-center gap-3">
+                            <span class="text-green-400">→</span> O Humano Permanece Central
+                        </h3>
+                        <p class="text-zinc-300 leading-relaxed">
+                            Por mais sofisticada que seja, a IA reflete dados e padrões humanos. A <strong class="text-white">intencionalidade</strong>, 
+                            o <strong class="text-white">contexto cultural</strong> e a <strong class="text-white">curadoria</strong> 
+                            permanecem domínios irredutivelmente humanos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <blockquote class="font-display text-2xl md:text-3xl italic text-zinc-200 max-w-3xl mx-auto">
+                    "A questão não é se a IA pode criar arte, mas como redefiniremos a arte diante da IA."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 6: Conclusão -->
+    <section class="slide min-h-screen flex items-center py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="text-accent text-sm uppercase tracking-widest">Slide 05</span>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-8">
+                Uma Nova <span class="gradient-text">Ontologia da Arte</span>
+            </h2>
+            
+            <div class="space-y-8 text-xl text-zinc-300 leading-relaxed">
+                <p>
+                    A IA não encerra o debate sobre o que é arte — ela o <strong class="text-white">intensifica</strong>. 
+                    Somos forçados a articular o que sempre assumimos implicitamente sobre criatividade, 
+                    consciência e expressão.
+                </p>
+                <p>
+                    Talvez a maior contribuição da IA para a arte não seja as obras que produz, 
+                    mas as <strong class="text-white">perguntas que nos obriga a fazer</strong>.
+                </p>
+                <p class="text-accent-light">
+                    E nisso, paradoxalmente, ela nos torna mais humanos.
+                </p>
+            </div>
+            
+            <div class="mt-16 glass rounded-2xl p-8 inline-block">
+                <p class="text-muted text-sm mb-2">Reflexão Final</p>
+                <p class="font-display text-xl text-white">
+                    "A arte existe porque a vida não basta." — Ferreira Gullar
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 7: Fontes -->
+    <section id="fontes" class="slide min-h-screen flex items-center py-24 bg-gradient-to-b from-transparent to-zinc-900/50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-accent text-sm uppercase tracking-widest">Referências</span>
+                <h2 class="font-display text-4xl md:text-5xl font-bold mt-4">
+                    <span class="gradient-text">Fontes Bibliográficas</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass rounded-xl p-6 hover:bg-white/5 transition-colors">
+                    <h4 class="font-display text-lg font-bold text-white mb-2">Walter Benjamin</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        "A Obra de Arte na Era de Sua Reprodutibilidade Técnica" (1936). 
+                        Ensaio seminal sobre o impacto da tecnologia na percepção e valor da arte.
+                    </p>
+                </div>
+                
+                <div class="glass rounded-xl p-6 hover:bg-white/5 transition-colors">
+                    <h4 class="font-display text-lg font-bold text-white mb-2">Roland Barthes</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        "A Morte do Autor" (1967). Ensaio que desafia a centralidade do autor na 
+                        interpretação de textos e obras artísticas.
+                    </p>
+                </div>
+                
+                <div class="glass rounded-xl p-6 hover:bg-white/5 transition-colors">
+                    <h4 class="font-display text-lg font-bold text-white mb-2">Michel Foucault</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        "O que é um Autor?" (1969). Análise da construção histórica e social 
+                        da figura do autor e sua função discursiva.
+                    </p>
+                </div>
+                
+                <div class="glass rounded-xl p-6 hover:bg-white/5 transition-colors">
+                    <h4 class="font-display text-lg font-bold text-white mb-2">Immanuel Kant</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        "Crítica da Faculdade do Juízo" (1790). Obra fundamental sobre estética, 
+                        beleza e o juízo de gosto.
+                    </p>
+                </div>
+                
+                <div class="glass rounded-xl p-6 hover:bg-white/5 transition-colors">
+                    <h4 class="font-display text-lg font-bold text-white mb-2">Martin Heidegger</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        "A Origem da Obra de Arte" (1935-36). Reflexão sobre a essência da arte 
+                        e sua relação com a verdade e o ser.
+                    </p>
+                </div>
+                
+                <div class="glass rounded-xl p-6 hover:bg-white/5 transition-colors">
+                    <h4 class="font-display text-lg font-bold text-white mb-2">John Dewey</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        "Arte como Experiência" (1934). Perspectiva pragmatista que enfatiza 
+                        a experiência estética sobre a definição formal de arte.
+                    </p>
+                </div>
+                
+                <div class="glass rounded-xl p-6 hover:bg-white/5 transition-colors">
+                    <h4 class="font-display text-lg font-bold text-white mb-2">Paul Klee</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        "Confissão Criativa" (1920). Reflexões do artista sobre o processo criativo 
+                        e a função reveladora da arte.
+                    </p>
+                </div>
+                
+                <div class="glass rounded-xl p-6 hover:bg-white/5 transition-colors">
+                    <h4 class="font-display text-lg font-bold text-white mb-2">Ferreira Gullar</h4>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Poeta e crítico de arte brasileiro, conhecido por suas reflexões sobre 
+                        a natureza e função da arte na sociedade contemporânea.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 glass rounded-xl p-6">
+                <h4 class="font-display text-lg font-bold text-white mb-4">Leituras Complementares Contemporâneas</h4>
+                <ul class="text-zinc-400 text-sm space-y-2">
+                    <li>• Floridi, Luciano. "The Ethics of Artificial Intelligence" (2023)</li>
+                    <li>• Boden, Margaret A. "The Creative Mind: Myths and Mechanisms" (2004)</li>
+                    <li>• Colton, Simon & Wiggins, Geraint. "Computational Creativity: The Final Frontier?" (2012)</li>
+                    <li>• Crawford, Kate. "Atlas of AI" (2021)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-muted text-sm">
+                Apresentação criada para fins educacionais e reflexivos sobre o impacto da IA na arte.
+            </p>
+            <p class="text-zinc-600 text-xs mt-4">
+                © 2024 — Conteúdo gerado com base em obras filosóficas clássicas e contemporâneas.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Indicador de Navegação -->
+    <div class="fixed right-6 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-3 z-50">
+        <a href="#inicio" class="w-3 h-3 rounded-full bg-white/20 hover:bg-accent transition-colors" title="Início"></a>
+        <a href="#questao" class="w-3 h-3 rounded-full bg-white/20 hover:bg-accent transition-colors" title="A Questão"></a>
+        <a href="#autoria" class="w-3 h-3 rounded-full bg-white/20 hover:bg-accent transition-colors" title="Autoria"></a>
+        <a href="#estetica" class="w-3 h-3 rounded-full bg-white/20 hover:bg-accent transition-colors" title="Estética"></a>
+        <a href="#futuro" class="w-3 h-3 rounded-full bg-white/20 hover:bg-accent transition-colors" title="Futuro"></a>
+        <a href="#fontes" class="w-3 h-3 rounded-full bg-white/20 hover:bg-accent transition-colors" title="Fontes"></a>
+    </div>
+
+</body>
+</html>
